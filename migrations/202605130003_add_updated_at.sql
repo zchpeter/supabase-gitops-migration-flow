@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS "public"."users" ADD COLUMN IF NOT EXISTS updated_at timestamp(6) with time zone DEFAULT now();
+ALTER TABLE IF EXISTS "public"."blog_posts" ADD COLUMN updated_at timestamp(6) with time zone DEFAULT now();
